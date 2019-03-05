@@ -1,14 +1,1 @@
-sudo: required
 language: java
-services:
-- docker
-notifications:
-  webhooks:
-    urls:
-      - https://services.wire.com/github/travis/163bf4f9-8b06-43fc-ab46-472ae2d602be
-    on_success: always
-    on_failure: always
-after_success:
-- if [[ "$TRAVIS_BRANCH" == "master" ]]; then docker login -u $DOCKER_USERNAME -p
-  $DOCKER_PASSWORD ; docker build -t $DOCKER_USERNAME/github-bot:latest . ; docker
-  push $DOCKER_USERNAME/github-bot ; fi
