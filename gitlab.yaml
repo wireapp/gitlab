@@ -1,0 +1,21 @@
+server:
+  applicationConnectors:
+    - type: http
+      port: 8080
+
+  requestLog:
+    appenders: []
+
+auth: ${DW_GITLAB_WIRE_SERVICE_TOKEN}
+baseUrl: ${DW_GITLAB_BASE_URL}
+
+swagger:
+  resourcePackage: com.wire.bots.sdk.server.resources
+  uriPrefix: /gitlab
+  schemes:
+    - http
+    - https
+
+db:
+    host: localhost
+    port: 6379 #redis

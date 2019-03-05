@@ -1,0 +1,7 @@
+**[zinfra/ibis]** New comment on commit 26867427
+
+**Comment on line 19 by dkovacevic**
+Very nice!
+
+[comment](https://github.com/zinfra/ibis/commit/23a509e504834c8912b488add80034322a2b2422#commitcomment-26867427)
+—

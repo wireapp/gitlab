@@ -1,0 +1,6 @@
+**[{{repository.full_name}}]** Issue **{{{issue.title}}}** {{action}} by **{{issue.user.login}}**
+
+{{{issue.body}}}
+
+[issue]({{issue.html_url}})
+—

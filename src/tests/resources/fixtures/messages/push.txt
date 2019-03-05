@@ -1,0 +1,7 @@
+**[Diaspora]** Push by **John Smith**
+
+ - [Update Catalan translation to e38cb41.](http://example.com/mike/diaspora/commit/b6568db1bc1dcd7f8b4d5a946b0b91f9dacd7327)
+ - [fixed readme](http://example.com/mike/diaspora/commit/da1560886d4f094c3e6c9ef40349f7d38b5d27d7)
+
+[compare]()
+—

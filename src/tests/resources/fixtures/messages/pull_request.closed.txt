@@ -1,0 +1,4 @@
+**[wearezeta/github-bot]** Pull request **issue_ropened.json** was closed by **dkovacevic**
+
+[pull request](https://github.com/wearezeta/github-bot/pull/14)
+—
