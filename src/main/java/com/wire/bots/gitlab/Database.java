@@ -14,7 +14,7 @@ public class Database {
         redisClient = new RedisClient(db.host, db.port, db.password, db.timeout);
     }
 
-    public boolean insertSecret(String secret) {
+    boolean insertSecret(String secret) {
         String key = String.format("%s.secret", botId);
         redisClient.put(key, secret);
         return true;

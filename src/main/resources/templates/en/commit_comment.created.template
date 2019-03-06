@@ -1,4 +1,4 @@
-**[{{repository.full_name}}]** New comment on commit {{comment.id}}
+**[{{repository.name}}]** New comment on commit {{comment.id}}
 
 **Comment on line {{comment.line}} by {{comment.user.login}}**
 {{{comment.body}}}

@@ -6,8 +6,8 @@ server:
   requestLog:
     appenders: []
 
-auth: ${DW_GITLAB_WIRE_SERVICE_TOKEN}
-baseUrl: ${DW_GITLAB_BASE_URL}
+auth: ${DW_GITLAB_BOT_WIRE_SERVICE_TOKEN}
+baseUrl: ${DW_GITLAB_BOT_BASE_URL}
 
 swagger:
   resourcePackage: com.wire.bots.sdk.server.resources
@@ -17,5 +17,5 @@ swagger:
     - https
 
 db:
-    host: localhost
-    port: 6379 #redis
+  host: localhost
+  port: 6379 #redis

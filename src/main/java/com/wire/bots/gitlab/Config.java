@@ -19,9 +19,9 @@
 package com.wire.bots.gitlab;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.wire.bots.sdk.Configuration;
 
-//@JsonIgnoreProperties(ignoreUnknown = true)
-public class Config extends com.wire.bots.sdk.Configuration {
+public class Config extends Configuration {
     @JsonProperty
-    public String baseUrl;
+    String baseUrl;
 }
