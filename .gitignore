@@ -1,9 +1,6 @@
 target/
-certs/
 crypto/
 .idea/
 *.iml
 *.log
 *.lck
-*.xml
-client-secret.json
