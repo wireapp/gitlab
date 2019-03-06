@@ -43,14 +43,14 @@ public class GitLabResource {
 
         Logger.info("%s.%s Bot: %s", event, payload.action, botId);
 
-        String message = webHookHandler.handle(payload.action, payload);
+        String message = webHookHandler.handle(payload);
 
         if (message == null || message.isEmpty())
             return Response.
                     ok().
                     build();
 
-        try (WireClient client = repo.getClient(botId.toString())) {
+        try (WireClient client = repo.getClient(botId)) {
             client.sendText(message);
         } catch (MissingStateException e) {
             Logger.info("GitLabResource.webHook: Bot previously deleted. Bot: %s", botId);

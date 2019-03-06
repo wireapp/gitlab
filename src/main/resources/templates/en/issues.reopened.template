@@ -1,6 +1,0 @@
-**[{{repository.full_name}}]** Issue **{{{issue.title}}}** {{action}} by **{{sender.login}}**
-
-{{{issue.body}}}
-
-{{issue.html_url}}
-—

@@ -104,12 +104,14 @@ public class MessageHandler extends MessageHandlerBase {
     }
 
     private String formatHelp(String url, String secret) {
-        return String.format("Hi, I'm GitLab bot. Here is how to set me up:\n\n"
-                        + "1. Go to the repository that you would like to connect to\n"
-                        + "2. Go to **Settings / Webhooks / Add webhook**\n"
-                        + "3. Add **Payload URL**: %s\n"
-                        + "4. Set **Content-Type**: application/json\n"
-                        + "5. Set **Secret**: %s",
+        return String.format("Bonjour, je suis le bot GitLab. Voici comment me configurer :\n\n"
+                        + "1. Allez sur la page du projet GitLab auquel vous souhaitez me connecter\n"
+                        + "2. Allez dans 'Paramètres' > 'Intégrations'\n"
+                        + "3. Dans le champ 'URL', entrez : %s\n"
+                        + "4. Dans le champ 'Secret Token', entrez : %s\n"
+                        + "5. Cochez uniquement 'Push events'\n"
+                        + "6. Laissez coché 'Enable SSL verification'\n"
+                        + "7. Cliquez sur 'Add webhook'",
                 url,
                 secret);
     }

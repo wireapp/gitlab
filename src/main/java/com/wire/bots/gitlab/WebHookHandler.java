@@ -15,10 +15,10 @@ public class WebHookHandler {
     private final static MustacheFactory mf = new DefaultMustacheFactory();
 
     @Nullable
-    public String handle(String event, GitResponse response) {
+    public String handle(GitResponse response) {
         try {
             if (!response.deleted) {
-                Mustache mustache = compileTemplate("en", event, response.action);
+                Mustache mustache = compileTemplate("en", response.action);
                 return execute(mustache, response);
             }
         } catch (MustacheNotFoundException ex) {
@@ -27,13 +27,8 @@ public class WebHookHandler {
         return null;
     }
 
-    private Mustache compileTemplate(String language, String event, @Nullable String action) {
-        if (action == null) {
-            String path = String.format("templates/%s/%s.template", language, event);
-            return mf.compile(path);
-        }
-
-        String path = String.format("templates/%s/%s.%s.template", language, event, action);
+    private Mustache compileTemplate(String language, String action) {
+        String path = String.format("templates/%s/%s.template", language, action);
         return mf.compile(path);
     }
 

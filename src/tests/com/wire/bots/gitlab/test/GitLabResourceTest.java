@@ -28,16 +28,9 @@ public class GitLabResourceTest {
     private String botId = UUID.randomUUID().toString();
 
     @Test
-    public void testOnCommitCommentCreated() {
-        String event = "commit_comment";
-        String payload = FixtureHelpers.fixture("fixtures/events/" + event + ".created.json");
-        gitHubWebhookPost(botId, event, payload);
-    }
-
-    @Test
-    public void testOnPRCreated() {
-        String event = "pull_request";
-        String payload = FixtureHelpers.fixture("fixtures/events/" + event + ".created.json");
+    public void testOnPushEvent() {
+        String event = "push";
+        String payload = FixtureHelpers.fixture("fixtures/events/" + event + ".json");
         gitHubWebhookPost(botId, event, payload);
     }
 
