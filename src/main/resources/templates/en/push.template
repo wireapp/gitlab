@@ -1,9 +1,8 @@
 {{^commits.isEmpty}}
-**[{{repository.name}}]** Push by **{{user}}**
+**[[{{project.path_with_namespace}}]({{{project.homepage}}})]** Push by **{{user}}**
 
 {{#commits}}
- - [{{{message}}}]({{url}})
+ - [{{message}}]({{url}})
 {{/commits}}
 
-[compare]({{compare}})
 —{{/commits.isEmpty}}

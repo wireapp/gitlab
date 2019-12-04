@@ -1,0 +1,5 @@
+**[[{{project.path_with_namespace}}]({{{project.homepage}}})]** Comment by **{{sender.name}}**
+
+[{{object_attributes.title}}} #{{{object_attributes.iid}}}]({{{object_attributes.url}}})
+
+> {{{object_attributes.description}}}
