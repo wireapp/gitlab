@@ -4,14 +4,13 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-public class User {
+public class Project {
+    @JsonProperty
+    public String path_with_namespace;
 
-    @JsonProperty("avatar_url")
-    public String avatarUrl;
+    @JsonProperty
+    public String homepage;
 
-    @JsonProperty("login")
-    public String login;
-
-    public String name;
-    public String username;
+    @JsonProperty
+    public String web_url;
 }

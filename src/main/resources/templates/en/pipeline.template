@@ -1,0 +1,3 @@
+**[[{{project.path_with_namespace}}]({{{project.web_url}}})]** Pipeline by **{{sender.name}}**
+
+[{{object_attributes.status}}} #{{{object_attributes.id}}}]({{{project.web_url}}}/pipelines/{{{object_attributes.id}}})

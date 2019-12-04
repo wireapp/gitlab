@@ -11,6 +11,9 @@ public class GitResponse {
     public String action;
 
     @JsonProperty
+    public ObjectAttributes object_attributes;
+
+    @JsonProperty
     public PullRequest pull_request;
 
     @JsonProperty
@@ -35,6 +38,9 @@ public class GitResponse {
     public Repository repository;
 
     @JsonProperty
+    public Project project;
+
+    @JsonProperty
     public boolean created;
 
     @JsonProperty
@@ -45,4 +51,5 @@ public class GitResponse {
 
     @JsonProperty("user_name")
     public String user;
+
 }

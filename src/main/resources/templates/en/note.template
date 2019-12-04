@@ -1,0 +1,5 @@
+**[[{{project.path_with_namespace}}]({{{project.homepage}}})]** Comment by **{{sender.name}}**
+
+[{{issue.title}}} #{{{issue.iid}}}]({{{issue.url}}})
+
+> [{{{object_attributes.note}}}]({{object_attributes.url}})
